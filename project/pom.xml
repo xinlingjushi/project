@@ -1,0 +1,162 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com</groupId>
+		<artifactId>git</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../git/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>project</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+ 	<!--<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>component</groupId>
+				<artifactId>jpa1</artifactId>
+				<scope>import</scope>
+				<type>pom</type>
+				<version>1.0.0</version>
+			</dependency> 
+		</dependencies>
+	</dependencyManagement> -->
+	<dependencies>
+		<!-- database -->
+		<!--<dependency>
+			<groupId>component</groupId>
+			<artifactId>jpa2</artifactId>
+			<type>pom</type>
+		</dependency> 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>jpa1</artifactId>
+			<type>pom</type>
+ 			<version>1.0.0</version> 
+		</dependency>
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>dataSource</artifactId>
+			<type>pom</type>
+		</dependency> -->
+		
+		<!-- 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>dm</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>kingbase</artifactId>
+			<type>pom</type>
+		</dependency>
+		 -->
+		 
+		<!-- admin
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>adminMonitor</artifactId>
+			<type>pom</type>
+		</dependency>
+		 -->
+		 <!-- bpm
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>bpm</artifactId>
+			<type>pom</type>
+		</dependency>
+		 -->
+		 <!-- 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>csezipkin</artifactId>
+			<type>pom</type>
+		</dependency>
+		-->
+		<!-- 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>feign</artifactId>
+			<type>pom</type>
+		</dependency>
+		 
+		 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>hystrix</artifactId>
+			<type>pom</type>
+		</dependency>
+		 -->
+		<!-- isc --> <!--
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>isc</artifactId>
+			<type>pom</type>
+		</dependency>
+		-->
+		
+		<!-- lbss --> <!--
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>lbss</artifactId>
+			<type>pom</type>
+		</dependency>
+		-->
+		<!-- mybatis-->
+<!-- 		<dependency>
+			<groupId>component</groupId>
+			<artifactId>mybatis</artifactId>
+			<type>pom</type>
+		</dependency> -->
+		
+		<!-- redis jar-->
+<!-- 		<dependency>
+			<groupId>component</groupId>
+			<artifactId>redis</artifactId>
+			<type>pom</type>
+		</dependency> -->
+		
+		<!-- 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>session</artifactId>
+			<type>pom</type>
+		</dependency>
+		-->
+		<!-- 
+		<dependency>
+			<groupId>component</groupId>
+			<artifactId>zipkin</artifactId>
+			<type>pom</type>
+		</dependency>
+		-->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<configuration>
+						<!-- project entry -->
+						<mainClass>com.git.Application</mainClass>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>repackage</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+		</plugins>
+	</build>
+</project>
